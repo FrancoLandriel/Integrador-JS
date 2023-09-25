@@ -15,7 +15,17 @@
     font-family: 'Rubik', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -103,8 +113,8 @@ aside {
     box-shadow: 0 -1rem 0 var(--clr-white);
 }
 
-.boton-menu > i.bi-hand-index-thumb-fill,
-.boton-menu > i.bi-hand-index-thumb {
+.boton-menu>i.bi-hand-index-thumb-fill,
+.boton-menu>i.bi-hand-index-thumb {
     transform: rotateZ(90deg);
 }
 
@@ -137,9 +147,26 @@ main {
     padding: 3rem;
 }
 
+.contenedor {
+    background-color: var(--clr-white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.Info-local {
+    display: flex;
+    color: var(--clr-main);
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .titulo-principal {
     color: var(--clr-main);
     margin-bottom: 2rem;
+
 }
 
 .contenedor-productos {
@@ -352,7 +379,8 @@ main {
         color: var(--clr-gray);
     }
 
-    .open-menu, .close-menu {
+    .open-menu,
+    .close-menu {
         background-color: transparent;
         color: var(--clr-gray);
         border: 0;
@@ -382,7 +410,7 @@ main {
         flex-wrap: wrap;
         row-gap: 1rem;
     }
-    
+
 
 }
 
@@ -391,5 +419,169 @@ main {
 @media screen and (max-width: 400px) {
     .contenedor-productos {
         grid-template-columns: 1fr;
+    }
+
+    .info-contactos h2 {
+        font-weight: 700;
+        font-size: 15px;
+
+
+    }
+
+    .ubi h2 {
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .contactos {
+        width: 60vw;
+        height: 30vh;
+
+    }
+
+    .contactos-caja {
+        width: 10vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instagram {
+        height: 30px;
+        width: 30px;
+    }
+
+    iframe {
+        height: 250px;
+        width: 250px;
+    }
+
+    .contactos .contactos-caja a {
+
+
+        font-size: 12px;
+
+    }
+}
+
+.info-contactos {
+    padding: 50px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #49398a;
+    box-shadow: 10px 10px 5px 5px #756b9e;
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    gap: 1rem;
+}
+
+.contactos-caja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background: #7160b4;
+    box-shadow: 1px 1px 1px 1px #000000;
+    width: 400px;
+    height: 60px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #785ce9;
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    gap: 3rem;
+}
+
+.contactos .contactos-caja a {
+    color: rgb(233, 227, 220);
+    width: 150px;
+    padding: 8px 0px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+#contacto {
+    margin-top: 65px;
+    padding: 50px 0px 50px 0px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-contactos h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.ubi h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.ubi {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media (max-width: 780px) {
+    .info-contactos h2 {
+        font-weight: 700;
+        font-size: 25px;
+
+    }
+
+    .ubi h2 {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .contactos {
+        width: 330px;
+        height: 330px;
+
+    }
+
+    .contactos-caja {
+        width: 300px;
+    }
+
+    iframe {
+        width: 250px;
+        height: 250px;
     }
 }
